@@ -1,0 +1,68 @@
+database models
+
+manytomany simple and by intermediate table
+foreign key
+
+##############
+concept of FK :foreign key made same as making any feild
+concept of M2M : m2m work in a different way - use add() method to add record to the relation- model_instance.m2m_feild.add(m2m_instance)
+                 we add multiple records by using add() . 
+
+#############
+
+queryset
+
+create()
+get()          
+all()
+filter()
+exclude()
+delete()
+update()
+order_by('headline')[0]
+
+
+########
+lookup feilds
+
+__gte,__lte, __startswith,__contains,__icontains,__exact,__name
+
+pk lookups
+
+__in,__gt
+
+pk lookups also work across joins
+
+########
+lookup relationship
+ in this exclude will not work same as filter
+
+######
+F expressions :  compare the value of a model field with another field on the same model
+timedelta object : import timedelta - add subtract date and time
+
+
+########
+complex lookups with q object
+
+########
+querset evaluation
+
+iteration,count(),len(),repr(),list(),bool()
+
+#########
+methods that return new queryset
+
+filter()
+order_by(),order_by().asc(),desc()
+model_instance.reverse() ,
+(values() : it return dict)
+(values().order_by() ,order_by().values()) these two are same
+values_list() : returns tuple
+union() : combines two or more queryset
+intersection() : return shared element
+
+#######
+confusion
+
+annonate(),distinct()
